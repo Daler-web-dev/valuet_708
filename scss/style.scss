@@ -92,4 +92,40 @@ main {
 
     }
 
+    .content {
+        width: 76%;
+        height: 88%;
+        background-color: red;
+
+        position: fixed;
+        bottom: 5px;
+        right: -100%;
+        transition: .5s ease;
+    }
+
+    .activePage {
+        right: 32px;
+    }
+
+    #Overview {
+        background-color: yellow;
+    }
+    #Wallets {
+        background-color: green;
+    }
+    #Transictions {
+        background-color: blue;
+    }
+    #Exchange {
+        background-color: skyblue;
+    }
+    #Market {
+        background-color: pink;
+    }
+}
+
+
+div {
+    background-color: rgba(0, 0, 0, 0.291);
+    
 }
