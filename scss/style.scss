@@ -2,40 +2,94 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
-    background-color: red;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(46.41% 73.99% at 46.63% 48.05%, #20135C 0%, #140739 92.82%);
 }
 
 header {
-    width: 100%;
-    padding: 20px;
+    position: absolute;
+    top: 0px;
+    right: 32px;
+
+    width: 76%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c4c4c4;
+    border-bottom: 1px solid #2D317A;
+    padding: 10px 0px;
 
-    .left {
+    form {
+        background-color: #161245;
+        box-shadow: 0px 4px 20px rgba(3, 16, 52, 0.5);
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 7px 15px;
+
+        input, button {
+            all: unset;
+            color: white;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    }
+
+    .links {
         display: flex;
         align-items: center;
         gap: 15px;
-        a {
-            text-decoration: none;
-            color: black;
-        }
     }
-    .right {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        .round {
-            width: 38px;
-            height: 38px;
-            background-color: gray;
-            &:hover {
-                background-color: orange;
-            }   
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    aside {
+        width: 20%;
+        background: linear-gradient(0.32deg, rgba(28, 35, 64, 0) -5.79%, #1C0F54 114.59%);
+        filter: drop-shadow(0px -5px 25px rgba(0, 3, 32, 0.5));
+        padding: 20px 30px;
+
+        nav {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            a {
+                padding: 15px 16px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                text-decoration: none;
+                color: white;
+                border-radius: 6px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                opacity: .5;
+
+            }
+            .activeA {
+                opacity: 1;
+                background-color: #32395E;
+                border-bottom: 2px solid #1288E8;
+            }
         }
+
+
     }
+
 }
