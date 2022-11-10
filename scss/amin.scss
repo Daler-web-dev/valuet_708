@@ -193,6 +193,10 @@ main {
                             color: white;
                         }
                     }
+                    canvas{
+                        width: 100%;
+                     
+                    }
                 }
             }
 
@@ -417,6 +421,12 @@ main {
                     height: 100%;
                     width: 100%;
                     background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    canvas{
+                        transform: scaleY(0.6) scaleX(1);
+                        width: 100%;
+                    }
                 }
             }
 
