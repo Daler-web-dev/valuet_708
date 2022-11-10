@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+main {
+    #Overview {
+        background-color: transparent;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background-color: transparent;
+            margin-top: 20px;
+
+            .left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                background-color: transparent;
+
+                h1 {
+                    color: white;
+                    font-family: 'Open Sans';
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 25px;
+
+                }
+
+                p {
+                    font-family: 'Open Sans';
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    color: #54669C;
+                }
+            }
+
+            .right {
+                .add_widget {
+                    all: unset;
+                    height: 32px;
+                    width: 125px;
+                    color: white;
+                    border-radius: 25px;
+                    font-family: 'Open Sans';
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    cursor: pointer;
+                    background: linear-gradient(271.88deg, #3887FE 4.26%, #3BA0FF 51.37%, #5FB2FF 99.01%);
+
+                }
+
+            }
+        }
+
+        .middle {
+            width: 100%;
+            height: fit-content;
+            margin-top: 27px;
+            background-color: transparent;
+            gap: 12px;
+            display: flex;
+
+            .left {
+                display: flex;
+                gap: 19px;
+                background-color: transparent;
+                width: fit-content;
+
+                .box1 {
+                    height: 305px;
+                    width: 226px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding: 16px 24px;
+                    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+
+                    h1 {
+                        font-family: 'Open Sans';
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        color: white;
+                    }
+
+                    ul {
+                        width: 100%;
+
+                        li {
+                            font-family: 'Open Sans';
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            position: relative;
+                            padding-left: 20px;
+
+                            div {
+                                width: 10px;
+                                height: 10px;
+                                position: absolute;
+                                // background-color: #1288e8;
+                                top: 3px;
+                                left: 0;
+                                border-radius: 100%;
+                                filter: drop-shadow(0px 4px 4px rgba(0, 151, 232, 0.2));
+                            }
+
+                            p {
+                                display: block;
+
+                            }
+                        }
+                    }
+                }
+
+                .box2 {
+                    width: 240px;
+                    height: 305px;
+
+                    background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+                    padding: 16px 24px;
+
+                    .Spending_top {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: transparent;
+
+                        h1 {
+                            font-family: 'Open Sans';
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: white;
+                        }
+
+                        select {
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+
+                            option {
+                                all: unset;
+                                background: #190C47;
+                                border: none;
+                            }
+                        }
+                    }
+
+                    .Spending_bottom {
+                        margin-top: 32px;
+                        background-color: transparent;
+
+                        .price {
+                            font-family: 'Open Sans';
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 22px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: white;
+                        }
+
+                        span {
+                            font-family: 'Open Sans';
+                            font-size: 8px;
+                            font-weight: 300;
+                            line-height: 11px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                // gap: 16px;
+                background-color: transparent;
+
+                .box {
+                    width: 325px;
+                    height: 148px;
+                    background: linear-gradient(237.07deg, #604392 -8.06%, #0F0B38 96.63%);
+                    margin: 0 auto;
+                    padding: 16px;
+                    border-radius: 5px;
+
+                    h1 {
+                        font-family: 'Open Sans';
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: white;
+
+                    }
+
+                    .main {
+                        display: flex;
+                        background-color: transparent;
+
+                        .left {
+                            display: flex;
+                            align-items: center;
+                            justify-content: right;
+
+                            .coin {
+                                width: 64px;
+                                height: 64px;
+                                background-color: #644696;
+                                border-radius: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            .price {
+                                background-color: transparent;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+
+                                p {
+                                    display: block;
+                                    font-family: 'Open Sans';
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    line-height: 19px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: white;
+                                }
+
+                                span {
+                                    display: block;
+                                    font-family: 'Open Sans';
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    line-height: 16px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: white;
+                                }
+                            }
+
+                        }
+
+
+
+                        .right {
+                            width: fit-content;
+                            margin-left: 20px;
+                            background-color: transparent;
+                            display: flex;
+                            flex-direction: column;
+
+                            .item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                height: 34px;
+                                background-color: transparent;
+                                border-bottom: 1px solid #644696;
+
+                                .leftt {
+                                    width: fit-content;
+                                    background-color: transparent;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 28px;
+                                        height: 22px;
+                                    }
+                                }
+
+                                .right {
+                                    height: 34px;
+                                    background-color: transparent;
+                                    height: fit-content;
+
+                                    p {
+                                        font-family: 'Open Sans';
+                                        font-size: 8px;
+                                        font-weight: 400;
+                                        color: white;
+                                    }
+
+                                    span {
+                                        font-family: 'Open Sans';
+                                        font-size: 6px;
+                                        font-weight: 300;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            height: fit-content;
+            background-color: transparent;
+            gap: 12px;
+            display: flex;
+            margin-top: 24px;
+
+            .chartgraf {
+                height: 232px;
+                width: 725px;
+                background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                padding: 16px 24px;
+
+                .market_top {
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .market_left {
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        background-color: transparent;
+                        gap: 24px;
+
+                        h1 {
+                            font-family: 'Open Sans';
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: white;
+                        }
+
+                        select {
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+
+                            option {
+                                all: unset;
+                                background: #190C47;
+                                border: none;
+                            }
+                        }
+                    }
+
+                    .market_right {
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        background-color: transparent;
+
+
+                        select {
+                            font-family: "Open Sans";
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            border: none;
+                            background-color: transparent;
+                            color: #FFFFFF;
+
+                            option {
+                                all: unset;
+                                background: #190C47;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+                .market_chart {
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                }
+            }
+
+            .news {
+                height: 232px;
+                width: 410px;
+                padding: 16px 24px;
+                background: linear-gradient(185.19deg, rgba(27, 18, 78, 0.2) 3.73%, #0F0B38 95.83%);
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+                h1 {
+                    width: 100%;
+                    font-family: 'Open Sans';
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    color: white;
+                    border-bottom: 1px solid #2D317A;
+
+                }
+
+                .create_news {
+                    margin-top: 16px;
+                    width: 100%;
+                    color: white;
+                    max-height: 188px;
+                    overflow-y: scroll;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    background-color: transparent;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+
+                    }
+
+                    .news_box {
+                        display: flex;
+                        gap: 26px;
+                        background-color: transparent;
+
+                        h4 {
+                            font-family: 'Open Sans';
+                            font-size: 12px;
+                            font-weight: 300;
+                            line-height: 16px;
+                            width: 30%;
+
+                        }
+
+                        p {
+                            font-family: 'Open Sans';
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 16px;
+                            width: 70%;
+
+
+                        }
+                    }
+
+                }
+                .opacity_box{
+                    position: absolute;
+                    width: 100%;
+                    height: 76px;
+                    background: linear-gradient(180deg, rgba(15, 11, 56, 0) 8.84%, #0F0B38 100%);
+                    // background-color: red;
+                    bottom: -20px;
+                    left: 0;
+                }
+            }
+        }
+
+
+    }
+}
