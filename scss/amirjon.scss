@@ -1,0 +1,122 @@
+main {
+
+
+    #Wallets {
+        background-color: #150A40 !important;
+        color:
+            #0091ff;
+
+        h1 {
+            color: rgb(255, 255, 255);
+            margin-bottom: 24px;
+        }
+
+        .box_many {
+            width: 350px;
+            height: 175px;
+            background-color: #0F072D;
+            display: flex;
+            gap: 30px;
+
+            .box_chart {
+                width: 175px;
+                height: 175px;
+            }
+
+
+
+
+            .box_many_text {
+                width: 100px;
+                height: 175px;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        font-family: 'Open Sans';
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 16px;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        position: relative;
+                        padding-left: 20px;
+
+                        div {
+                           
+                            width: 10px;
+                            height: 10px;
+                            position: absolute;
+                            background-color: #1288e8;
+                            top: 3px;
+                            left: 0;
+                            border-radius: 100%;
+                            filter: drop-shadow(0px 4px 4px rgba(0, 151, 232, 0.2));
+                        }
+
+                        p {
+                            display: block;
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .sss {
+
+            display: flex;
+            
+            .box_line {
+            width: 500px;
+            height: 500px;
+            // background-color: red;
+            
+        }
+        .box_many_info {
+            padding: 20px;
+            width: 700px;
+            height: 500px;
+            margin-left: 50px;
+            // background-color: red;
+            // text-align: center;
+            hr {
+                border: none;
+                border-bottom: 3px solid #1288e8;
+            }
+            width: 100%;
+            .box_many_infos {
+                margin-top: 30px;
+                color: white;
+                padding: 1px;
+                overflow-y: scroll;
+                height: 380px;
+                background-color: #0F072D;
+                position: absolute;
+                width: 63%;
+                .box_many_infos_child {
+                    display: flex;
+                    // width: 100%;
+                    gap: 4px;
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+                    padding: 5px;
+                    
+                }
+                
+            }
+        }
+
+        
+
+    }
+
+    }
+}

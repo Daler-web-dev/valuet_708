@@ -7,7 +7,7 @@ pagesBtn.forEach(btn => {
 
         pages.forEach(p => {
             console.log(pageid, p.id);
-            if(pageid === p.id) {
+            if (pageid === p.id) {
                 p.classList.add('activePage')
             } else {
                 p.classList.remove('activePage')
@@ -19,4 +19,3 @@ pagesBtn.forEach(btn => {
 
     }
 })
-
