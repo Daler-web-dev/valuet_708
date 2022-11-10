@@ -58,7 +58,11 @@ main {
         background: linear-gradient(0.32deg, rgba(28, 35, 64, 0) -5.79%, #1C0F54 114.59%);
         filter: drop-shadow(0px -5px 25px rgba(0, 3, 32, 0.5));
         padding: 20px 30px;
-
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         nav {
             margin-top: 40px;
             display: flex;
@@ -95,7 +99,6 @@ main {
     .content {
         width: 76%;
         height: 88%;
-        background-color: red;
 
         position: fixed;
         bottom: 5px;
@@ -107,9 +110,7 @@ main {
         right: 32px;
     }
 
-    #Overview {
-        background-color: yellow;
-    }
+
     #Wallets {
         background-color: green;
     }
@@ -126,7 +127,3 @@ main {
 }
 
 
-div {
-    background-color: rgba(0, 0, 0, 0.291);
-    
-}
