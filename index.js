@@ -28,13 +28,13 @@ pagesBtn.forEach(btn => {
 let data = document.querySelector('.data')
 
 let str = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-let arr = ['Monday', 'Tuesday ', 'Wednesday ', 'Thursday ', 'Friday ', 'Saturday ', 'Sunday ']
+let days = ['Monday', 'Tuesday ', 'Wednesday ', 'Thursday ', 'Friday ', 'Saturday ', 'Sunday ']
 let day = new Date().getDate()
 let month = new Date().getMonth()
 let year = new Date().getFullYear()
 let date = new Date(year, month, day)
 
-data.innerHTML = date.getDate() + ' ' + str[date.getMonth()] + ' , ' + arr[date.getDay()]
+data.innerHTML = date.getDate() + ' ' + str[date.getMonth()] + ' , ' + days[date.getDay()]
 
 
 
@@ -186,13 +186,13 @@ const arr = [
         time: 'PM 01:16',
         date: '24 dec 2018',
         btc: '0000.3',
-        status: 'Waiting'
+        status: 'Error'
     },
     {
         time: 'AM 01:16',
         date: '24 dec 2018',
         btc: '0000.3',
-        status: 'Waiting'
+        status: 'Completed'
     }
 ]
 
@@ -229,6 +229,7 @@ function reload(arr, place) {
         p3.innerHTML = '74EKRJMXkhKDR5dj34578fgirwE22sfg'
         p4.innerHTML = item.btc
         btn.innerHTML = item.status
+
         if(item.status === 'Error'){
             btn.classList.add('error')
         } else if(item.status === 'Completed'){
