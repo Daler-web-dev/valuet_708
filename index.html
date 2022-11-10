@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <form>
@@ -31,7 +33,7 @@
         <aside>
             <h1>Valuet</h1>
             <nav>
-                <a href="#" data-p="Overview" class="activeA" >
+                <a href="#" data-p="Overview">
                     <img src="./public/icons/overview.svg" alt="">
                     <span>Overview</span>
                 </a>
@@ -39,11 +41,11 @@
                     <img src="./public/icons/wallet.svg" alt="">
                     <span>Wallets</span>
                 </a>
-                <a href="#" data-p="Transictions" >
+                <a href="#" data-p="Transictions">
                     <img src="./public/icons/arrows.svg" alt="">
                     <span>Transictions</span>
                 </a>
-                <a href="#" data-p="Exchange">
+                <a href="#" data-p="Exchange" class="activeA">
                     <img src="./public/icons/exchange.svg" alt="">
                     <span>Exchange</span>
                 </a>
@@ -54,23 +56,102 @@
             </nav>
         </aside>
 
-        <div class="content activePage" id="Overview" >
+        <div class="content " id="Overview">
             <h1>Overview</h1>
         </div>
-        <div class="content" id="Wallets" >
+        <div class="content" id="Wallets">
             <h1>Wallets</h1>
         </div>
-        <div class="content" id="Transictions" >
+        <div class="content" id="Transictions">
             <h1>Transictions</h1>
         </div>
-        <div class="content" id="Exchange" >
+        <div class="content activePage" id="Exchange">
             <h1>Exchange</h1>
 
-            <form action="">
-                <input type="text">
-            </form>
+            <div class="wrap">
+                <div class="box_from">
+                    <p>From</p>
+                    <div class="coin_from">
+                        <div class="coin_from_top">
+                            <select name="coin" id="">
+                                <option value="BitCoin">BitCoin</option>
+                                <option value="DASH">DASH</option>
+                                <option value="Aeternity">Aeternity</option>
+                                <option value="Ethereum">Ethereum</option>
+                                <option value="PeerCoin">PeerCoin</option>
+                                <option value="GridCoin">GridCoin</option>
+                                <option value="NavCoin">NavCoin</option>
+                                <option value="LiteCoin">LiteCoin</option>
+                                <option value="Nano">Nano</option>
+                            </select>
+
+                            <div class="coin_img_1">
+                                <img src="./public/icons/Bitcoin.png" alt="">
+                            </div>
+                        </div>
+                        <div class="coin_from_form">
+                            <form name="coin_1">
+                                <input type="number" name='coin_1' value="0.45234">
+                                <p>BTC</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_to">
+                    <p>To</p>
+                    <div class="coin_to">
+                        <div class="coin_to_top">
+                            <select name="coin" id="">
+                                <option value="GridCoin">GridCoin</option>
+                                <option value="DASH">DASH</option>
+                                <option value="Aeternity">Aeternity</option>
+                                <option value="Ethereum">Ethereum</option>
+                                <option value="PeerCoin">PeerCoin</option>
+                                <option value="BitCoin">BitCoin</option>
+                                <option value="NavCoin">NavCoin</option>
+                                <option value="LiteCoin">LiteCoin</option>
+                                <option value="Nano">Nano</option>
+                            </select>
+
+                            <div class="coin_img_2">
+                                <img src="./public/icons/GridCoin.png" alt="">
+                            </div>
+                        </div>
+                        <div class="coin_to_form">
+                            <form name="coin_2">
+                                <input type="number" name="coin_2" value="1.45534">
+                                <p>GRC</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange_box">
+                <div class="exchange_box_left">
+                    <p id="coin_1">0.45234 <span>BTC</span></p>
+                    <div class="coin_img_1">
+                        <img src="./public/icons/Bitcoin.png" alt="">
+                    </div>
+                </div>
+                <div class="exchange_box_arrow">
+                    <img src="./public/icons/Arrow.png" alt="">
+                </div>
+                <div class="exchange_box_right">
+                    <div class="coin_img_2">
+                        <img src="./public/icons/GridCoin.png" alt="">
+                    </div>
+                    <p id="coin_2">1.45534 <span>GRC</span></p>
+                </div>
+
+
+            </div>
+
+            <div class="exchange_btn_box">
+                <button class="exchange_btn">Exchange</button>
+            </div>
+
         </div>
-        <div class="content" id="Market" >
+        <div class="content" id="Market">
             <h1>Market</h1>
         </div>
 

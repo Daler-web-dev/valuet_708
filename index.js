@@ -20,3 +20,48 @@ pagesBtn.forEach(btn => {
     }
 })
 
+
+let form_1 = document.forms.coin_1
+let coin1 = document.querySelector('#coin_1')
+let form_2 = document.forms.coin_2
+
+let coin2 = document.querySelector('#coin_2')
+// console.log(coin1);
+form_1.onkeyup = (event) =>{
+    event.preventDefault()
+
+    let coin = {
+
+    }
+
+    let fmr = new FormData(form_1)
+
+
+    fmr.forEach((value, key) => {
+        coin[key] = value
+    })
+
+    console.log(coin);
+    coin1.innerHTML = coin.coin_1+ ' ' + 'BTC'
+
+}
+form_2.onkeyup = (event) =>{
+    event.preventDefault()
+    console.log('aa');
+    let coin = {
+
+    }
+
+    let fmr = new FormData(form_2)
+
+
+    fmr.forEach((value, key) => {
+        coin[key] = value
+    })
+
+    console.log(coin);
+
+    coin2.innerHTML = coin.coin_2 + ' ' + 'GRC'
+}
+
+
