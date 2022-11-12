@@ -406,17 +406,7 @@
 					<p>From</p>
 					<div class="coin_from">
 						<div class="coin_from_top">
-							<select name="coin" id="">
-								<option value="BitCoin">BitCoin</option>
-								<option value="DASH">DASH</option>
-								<option value="Aeternity">Aeternity</option>
-								<option value="Ethereum">Ethereum</option>
-								<option value="PeerCoin">PeerCoin</option>
-								<option value="GridCoin">GridCoin</option>
-								<option value="NavCoin">NavCoin</option>
-								<option value="LiteCoin">LiteCoin</option>
-								<option value="Nano">Nano</option>
-							</select>
+							<select name="coin" id="from"></select>
 
 							<div class="coin_img_1">
 								<img src="./public/icons/Bitcoin.png" alt="" />
@@ -424,7 +414,7 @@
 						</div>
 						<div class="coin_from_form">
 							<form name="coin_1">
-								<input type="number" name="coin_1" value="0.45234" />
+								<input id="amount" type="number" name="coin_1" value="0.45234" />
 								<p>BTC</p>
 							</form>
 						</div>
@@ -434,16 +424,7 @@
 					<p>To</p>
 					<div class="coin_to">
 						<div class="coin_to_top">
-							<select name="coin" id="">
-								<option value="GridCoin">GridCoin</option>
-								<option value="DASH">DASH</option>
-								<option value="Aeternity">Aeternity</option>
-								<option value="Ethereum">Ethereum</option>
-								<option value="PeerCoin">PeerCoin</option>
-								<option value="BitCoin">BitCoin</option>
-								<option value="NavCoin">NavCoin</option>
-								<option value="LiteCoin">LiteCoin</option>
-								<option value="Nano">Nano</option>
+							<select name="coin" id="to">
 							</select>
 
 							<div class="coin_img_2">
@@ -452,7 +433,7 @@
 						</div>
 						<div class="coin_to_form">
 							<form name="coin_2">
-								<input type="number" name="coin_2" value="1.45534" />
+								<input id="resInp" type="number" name="coin_2" value="1.45534" />
 								<p>GRC</p>
 							</form>
 						</div>
@@ -461,7 +442,7 @@
 			</div>
 			<div class="exchange_box">
 				<div class="exchange_box_left">
-					<p id="coin_1">0.45234 <span>BTC</span></p>
+					<p id="coin_1"></p>
 					<div class="coin_img_1">
 						<img src="./public/icons/Bitcoin.png" alt="" />
 					</div>
@@ -489,9 +470,11 @@
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
 	<script src="./index.js"></script>
 	<script src="./modules/cards.js"></script>
+	<script src="./modules/useHttp.js"></script>
 </body>
 
 </html>
