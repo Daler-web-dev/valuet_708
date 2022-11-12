@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+#Exchange {
+    color: white;
+    background-color: transparent;
+
+    h1 {
+        font-family: 'Open Sans';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        background-color: transparent;
+        margin-top: 30px;
+
+    }
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+
+        .box_from {
+            width: 49%;
+            background-color: transparent;
+            margin-top: 16px;
+
+            p {
+                font-family: 'Open Sans';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #616A8B;
+            }
+
+            .coin_from {
+                width: 100%;
+                height: 226px;
+                background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                margin-top: 8px;
+                background-color: transparent;
+                padding: 28px 36px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .coin_from_top {
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    select {
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        border: none;
+                        background-color: transparent;
+                        color: #FFFFFF;
+
+                        option {
+                            all: unset;
+                            background: #190C47;
+                            border: none;
+                        }
+                    }
+
+                    .coin_img_1 {
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #644696;
+                        border-radius: 100%;
+                        border: 7px solid #65469684;
+                    }
+                }
+
+                .coin_from_form {
+                    width: 100%;
+                    height: 46px;
+                    background-color: #32395E;
+                    border-bottom: 2px solid #1288E8;
+                    border-radius: 5px;
+
+                    form {
+
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 6px 6px 16px;
+                        justify-content: space-between;
+
+                        input {
+                            all: unset;
+                            width: 90%;
+                            height: 46px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        p {
+                            font-family: 'Open Sans';
+                            font-size: 24px;
+                            font-weight: 300;
+                            line-height: 33px;
+                            letter-spacing: 0em;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box_to {
+            width: 49%;
+            background-color: transparent;
+            margin-top: 16px;
+
+            p {
+                font-family: 'Open Sans';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #616A8B;
+            }
+
+            .coin_to {
+                width: 100%;
+                height: 226px;
+                background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                margin-top: 8px;
+                background-color: transparent;
+                padding: 28px 36px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .coin_to_top {
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    select {
+                        font-family: "Open Sans";
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        border: none;
+                        background-color: transparent;
+                        color: #FFFFFF;
+
+                        option {
+                            all: unset;
+                            background: #190C47;
+                            border: none;
+                        }
+                    }
+
+                    .coin_img_2 {
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #BC5661;
+                        border-radius: 100%;
+                        border: 7px solid #bc566094;
+                    }
+                }
+
+                .coin_to_form {
+                    width: 100%;
+                    height: 46px;
+                    background-color: #32395E;
+                    border-bottom: 2px solid #1288E8;
+                    border-radius: 5px;
+
+                    form {
+
+                        display: flex;
+                        align-items: center;
+                        padding: 6px 6px 6px 16px;
+                        justify-content: space-between;
+
+                        input {
+                            all: unset;
+                            width: 90%;
+                            height: 46px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        p {
+                            font-family: 'Open Sans';
+                            font-size: 24px;
+                            font-weight: 300;
+                            line-height: 33px;
+                            letter-spacing: 0em;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .exchange_box {
+        margin-top: 24px;
+        width: 100%;
+        height: 113px;
+        background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) -153.98%, #0F0B38 140.59%);
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+        .exchange_box_left {
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            gap: 16px;
+            .coin_img_1 {
+                width: 59px;
+                height: 59px;
+                border-radius: 100%;
+                border: 2px solid #1190F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img{
+                    transform: scale(0.7);
+                }
+            }
+
+            p {
+                font-family: 'Open Sans';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+
+        .exchange_box_arrow {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+
+        }
+
+        .exchange_box_right {
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            gap: 16px;
+
+            p {
+                font-family: 'Open Sans';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .coin_img_2 {
+                width: 59px;
+                height: 59px;
+                border-radius: 100%;
+                border: 2px solid #1190F2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    transform: scale(0.7);
+                }
+            }
+        }
+    }
+
+    .exchange_btn_box {
+        margin-top: 32px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        .exchange_btn {
+            width: 125px;
+            height: 42px;
+            background: linear-gradient(88.43deg, #1288E8 11.5%, #0097E8 76.7%);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            color: white;
+
+        }
+    }
+
+}
