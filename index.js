@@ -21,11 +21,6 @@ pagesBtn.forEach(btn => {
 })
 
 
-
-
-
-
-
 // Overview
 
 
@@ -33,13 +28,13 @@ pagesBtn.forEach(btn => {
 let data = document.querySelector('.data')
 
 let str = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-let arr = ['Monday', 'Tuesday ', 'Wednesday ', 'Thursday ', 'Friday ', 'Saturday ', 'Sunday ']
+let arrr = ['Monday', 'Tuesday ', 'Wednesday ', 'Thursday ', 'Friday ', 'Saturday ', 'Sunday ']
 let day = new Date().getDate()
 let month = new Date().getMonth()
 let year = new Date().getFullYear()
 let date = new Date(year, month, day)
 
-data.innerHTML = date.getDate() + ' ' + str[date.getMonth()] + ' , ' + arr[date.getDay()]
+data.innerHTML = date.getDate() + ' ' + str[date.getMonth()] + ' , ' + arrr[date.getDay()]
 
 
 
@@ -151,11 +146,6 @@ color.forEach(col => {
             
 //     }
 // ]
-
-
-
-
-
 
 
 
