@@ -4,12 +4,16 @@
 main {
     #Overview {
         background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         .top {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
+            height: 5%;
             background-color: transparent;
             margin-top: 20px;
 
@@ -61,21 +65,23 @@ main {
 
         .middle {
             width: 100%;
-            height: fit-content;
+            height: 48%;
+            // height: fit-content;
             margin-top: 27px;
-            background-color: transparent;
             gap: 12px;
             display: flex;
 
-            .left {
+            .left_middle {
+                width: 50%;
+                height: 100%;
                 display: flex;
                 gap: 19px;
                 background-color: transparent;
-                width: fit-content;
+                // width: fit-content;
 
                 .box1 {
-                    height: 305px;
-                    width: 226px;
+                    height: 100%;
+                    width: 50%;
                     border-radius: 5px;
                     display: flex;
                     flex-direction: column;
@@ -83,6 +89,7 @@ main {
                     justify-content: space-between;
                     padding: 16px 24px;
                     background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
+                    position: relative;
 
                     h1 {
                         font-family: 'Open Sans';
@@ -90,6 +97,22 @@ main {
                         font-weight: 700;
                         line-height: 19px;
                         color: white;
+                    }
+
+                    .doughnut_middle {
+                        width: 100%;
+                        height: 50%;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        canvas {
+                            transform: scale(0.5);
+                        }
                     }
 
                     ul {
@@ -128,9 +151,14 @@ main {
                 }
 
                 .box2 {
-                    width: 240px;
-                    height: 305px;
+                    width: 50%;
+                    height: 100%;
 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // height: 305px;
+                    position: relative;
                     background: linear-gradient(180deg, rgba(27, 18, 78, 0.2) 0%, #0F0B38 93.37%);
                     padding: 16px 24px;
 
@@ -167,6 +195,19 @@ main {
                                 border: none;
                             }
                         }
+
+                        .line_middle {
+                            width: 100%;
+                            height: 200px;
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+
+                            canvas {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
 
                     .Spending_bottom {
@@ -193,22 +234,22 @@ main {
                             color: white;
                         }
                     }
-                    canvas{
-                        width: 100%;
-                     
-                    }
+
                 }
             }
 
-            .right {
+            .right_middle {
+                width: 50%;
+                height: 100%;
+
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                // gap: 16px;
+                gap: 1%;
                 background-color: transparent;
 
                 .box {
-                    width: 325px;
-                    height: 148px;
+                    width: 100%;
+                    height: 99%;
                     background: linear-gradient(237.07deg, #604392 -8.06%, #0F0B38 96.63%);
                     margin: 0 auto;
                     padding: 16px;
@@ -228,6 +269,7 @@ main {
                     .main {
                         display: flex;
                         background-color: transparent;
+                        justify-content: space-between;
 
                         .left {
                             display: flex;
@@ -334,15 +376,15 @@ main {
 
         .bottom {
             width: 100%;
-            height: fit-content;
+            height: 42%;
             background-color: transparent;
             gap: 12px;
             display: flex;
             margin-top: 24px;
 
             .chartgraf {
-                height: 232px;
-                width: 725px;
+                height: 100%;
+                width: 60%;
                 background: linear-gradient(176.95deg, rgba(27, 18, 78, 0.2) -32.8%, #0F0B38 88.83%);
                 box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.25);
                 border-radius: 5px;
@@ -418,26 +460,29 @@ main {
                 }
 
                 .market_chart {
-                    height: 100%;
+                    height: 80%;
                     width: 100%;
                     background-color: transparent;
                     display: flex;
                     align-items: center;
-                    canvas{
-                        transform: scaleY(0.6) scaleX(1);
+
+                    canvas {
+                        transform: scaleY(50%) scaleX(1);
                         width: 100%;
                     }
                 }
             }
 
             .news {
-                height: 232px;
-                width: 410px;
+                height: 100%;
+
+                width: 40%;
                 padding: 16px 24px;
                 background: linear-gradient(185.19deg, rgba(27, 18, 78, 0.2) 3.73%, #0F0B38 95.83%);
                 border-radius: 5px;
                 position: relative;
                 overflow: hidden;
+
                 h1 {
                     width: 100%;
                     font-family: 'Open Sans';
@@ -451,6 +496,7 @@ main {
 
                 .create_news {
                     margin-top: 16px;
+                    height: 100%;
                     width: 100%;
                     color: white;
                     max-height: 188px;
@@ -491,7 +537,8 @@ main {
                     }
 
                 }
-                .opacity_box{
+
+                .opacity_box {
                     position: absolute;
                     width: 100%;
                     height: 76px;
